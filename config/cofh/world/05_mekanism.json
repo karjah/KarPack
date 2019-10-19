@@ -1,0 +1,27 @@
+"dependencies": "mekanism",
+"populate": {
+	"osmium_ore": {
+		"enabled": "true",
+		"distribution": "uniform",
+		"generator" : {
+			"block":{
+				"mekanism:oreblock",
+				"metadata": 0
+			},
+			"material": "minecraft:stone",
+			"cluster-size": 8
+		},
+		"cluster-count": 8,
+		"min-height": 40,
+		"max-height": 75,
+		"retrogen": "true",
+		"biome": "all",
+		"dimension": {
+			"restriction": "blacklist",
+			"value": [
+				-1,
+				1
+			]
+		}
+	}
+}

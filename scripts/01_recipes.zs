@@ -75,6 +75,10 @@ for item in recipeRemove {
 
 //MODS
 
+//Vanilla
+
+recipes.addShaped(<minecraft:chest> * 4, [[<ore:logWood>, <ore:logWood>, <ore:logWood>],[<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
+
 //Drawbridges
 
 //add drawbridge recipe
@@ -89,3 +93,8 @@ recipes.addShaped(<drawbridges:drawbridge_extended>, [[<thermalfoundation:materi
 //machine frame
 recipes.remove(<rftools:machine_frame>);
 recipes.addShaped(<rftools:machine_frame>, [[<minecraft:iron_ingot>, <ore:blockGlass>, <minecraft:iron_ingot>],[<minecraft:gold_ingot>, null, <minecraft:gold_ingot>], [<minecraft:iron_ingot>, <ore:blockGlass>, <minecraft:iron_ingot>]]);
+
+//Chicken Chunks
+recipes.remove(<chickenchunks:chunk_loader:1>);
+recipes.addShapeless(<chickenchunks:chunk_loader:1> * 9, [<chickenchunks:chunk_loader>]);
+recipes.addShaped(<chickenchunks:chunk_loader>, [[<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>],[<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>], [<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>]]);

@@ -1,50 +1,53 @@
-"dependencies": "tconstruct",
-"populate": {
-	"cobalt_ore": {
-		"enabled": "true",
-		"distribution": "uniform",
-		"generator" : {
-			"block":{
-				"tconstruct:ore",
-				"metadata": 0
-			},
-			"material": "minecraft:netherrack",
-			"cluster-size": 4
-		},
-		"cluster-count": 20,
-		"min-height": 0,
-		"max-height": 128,
-		"retrogen": "true",
-		"biome": "all",
-		"dimension": {
-			"restriction": "blacklist",
-			"value": [
-				-1
-			]
-		},
+{
+	"dependencies": "tconstruct",
+	"populate": {
 		"cobalt_ore": {
-		"enabled": "true",
-		"distribution": "uniform",
-		"generator" : {
-			"block":{
-				"tconstruct:ore",
-				"metadata": 1
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator" : {
+				"block":{
+					"name": "tconstruct:ore",
+					"metadata": 0
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 4
 			},
-			"material": "minecraft:netherrack",
-			"cluster-size": 4
+			"cluster-count": 20,
+			"chunk_chance": 4,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
 		},
-		"cluster-count": 20,
-		"chunk_chance": 6,
-		"min-height": 0,
-		"max-height": 128,
-		"retrogen": "true",
-		"biome": "all",
-		"dimension": {
-			"restriction": "blacklist",
-			"value": [
-				-1
-			]
+		"ardite_ore": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator" : {
+				"block":{
+					"name": "tconstruct:ore",
+					"metadata": 1
+				},
+				"material": "minecraft:netherrack",
+				"cluster-size": 4
+			},
+			"cluster-count": 20,
+			"chunk_chance": 4,
+			"min-height": 0,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
 		}
-	}
 	}
 }

@@ -127,9 +127,9 @@
 			"generator": {
 				"block": "coal_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 17
+				"cluster-size": 14
 			},
-			"cluster-count": 20,
+			"cluster-count": 17,
 			"min-height": 0,
 			"max-height": 128,
 			"retrogen": false,
@@ -148,10 +148,10 @@
 			"generator": {
 				"block": "iron_ore",
 				"material": "minecraft:stone",
-				"cluster-size": 9
+				"cluster-size": 8
 			},
-			"cluster-count": 20,
-			"min-height": 0,
+			"cluster-count": 10,
+			"min-height": 25,
 			"max-height": 64,
 			"retrogen": false,
 			"biome": "all",
@@ -294,7 +294,7 @@
 					"name": "emerald_ore"
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 1
+				"cluster-size": 2
 			},
 			"cluster-count": {
 				"min": 3,

@@ -6,19 +6,20 @@
 			"distribution": "uniform",
 			"generator" : {
 				"block":{
-					"tconstruct:ore",
+					"name": "tconstruct:ore",
 					"metadata": 0
 				},
 				"material": "minecraft:netherrack",
 				"cluster-size": 4
 			},
 			"cluster-count": 20,
+			"chunk_chance": 4,
 			"min-height": 0,
 			"max-height": 128,
 			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					-1
 				]
@@ -29,20 +30,20 @@
 			"distribution": "uniform",
 			"generator" : {
 				"block":{
-					"tconstruct:ore",
+					"name": "tconstruct:ore",
 					"metadata": 1
 				},
 				"material": "minecraft:netherrack",
 				"cluster-size": 4
 			},
 			"cluster-count": 20,
-			"chunk_chance": 6,
+			"chunk_chance": 4,
 			"min-height": 0,
 			"max-height": 128,
 			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
-				"restriction": "blacklist",
+				"restriction": "whitelist",
 				"value": [
 					-1
 				]

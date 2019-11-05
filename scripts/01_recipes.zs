@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-var recipeRemove as IIngredient[] = [
-	
+var recipeRemove as IIngredient[] = [	
 	//vanilla
 	<minecraft:iron_sword>,
 	<minecraft:iron_axe>,

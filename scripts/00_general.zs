@@ -3,15 +3,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-global STAGES as string[string] = {
-	default : "default",
-	smelting : "smelting",
-	doubling : "doubling",
-	tripling : "tripling",
-	unknown : "unknown"
-};
-
-
 /* Fixes broken bread recipe */
 recipes.addShaped(<minecraft:bread> * 1, [[<ore:cropWheat>, <ore:cropWheat>, <ore:cropWheat>]]);
 

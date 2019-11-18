@@ -18,6 +18,7 @@ var recipeRemove as IIngredient[] = [
 	<mekanism:walkietalkie>,
 	<mekanism:dust:2>,
 	<mekanism:nugget:1>,
+	/*
 	<mekanismtools:osmiumpickaxe>,
 	<mekanismtools:osmiumshovel>,
 	<mekanismtools:osmiumaxe>,
@@ -28,6 +29,7 @@ var recipeRemove as IIngredient[] = [
 	<mekanismtools:osmiumleggings>,
 	<mekanismtools:osmiumchestplate>,
 	<mekanismtools:osmiumboots>,
+	*/
 	<mekanism:basicblock>,
 	<mekanism:shard:2>,
 	<mekanism:crystal:2>,

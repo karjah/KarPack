@@ -10,3 +10,4 @@ mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:snowball>, <liquid:
 mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:snowball>, <liquid:experience>);
 //Blaze Powder
 mods.thermalexpansion.Transposer.removeFillRecipe(<thermalfoundation:material:771>, <liquid:essence>);
+mods.thermalexpansion.Transposer.removeFillRecipe(<thermalfoundation:material:771>, <liquid:experience>);

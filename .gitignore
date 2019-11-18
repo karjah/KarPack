@@ -1,10 +1,10 @@
 /*
 !/.gitignore
 !/config/
+/config/InvTweaks.cfg
+/config/splash.properties
+/config/jei/worldSettings.cfg
 !/scripts/
 !/resources/
 !/ServerStart.bat
 !/ServerStart.sh
-config/InvTweaks.cfg
-config/splash.properties
-config/jei/worldSettings.cfg

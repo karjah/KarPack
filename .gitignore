@@ -5,3 +5,5 @@
 !/resources/
 !/ServerStart.bat
 !/ServerStart.sh
+config/InvTweaks.cfg
+config/splash.properties

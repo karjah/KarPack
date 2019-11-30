@@ -1,8 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-var recipeRemove as IIngredient[] = [
-	
+var recipeRemove as IIngredient[] = [	
 	//vanilla
 	<minecraft:iron_sword>,
 	<minecraft:iron_axe>,
@@ -19,6 +18,7 @@ var recipeRemove as IIngredient[] = [
 	<mekanism:walkietalkie>,
 	<mekanism:dust:2>,
 	<mekanism:nugget:1>,
+	/*
 	<mekanismtools:osmiumpickaxe>,
 	<mekanismtools:osmiumshovel>,
 	<mekanismtools:osmiumaxe>,
@@ -29,6 +29,7 @@ var recipeRemove as IIngredient[] = [
 	<mekanismtools:osmiumleggings>,
 	<mekanismtools:osmiumchestplate>,
 	<mekanismtools:osmiumboots>,
+	*/
 	<mekanism:basicblock>,
 	<mekanism:shard:2>,
 	<mekanism:crystal:2>,

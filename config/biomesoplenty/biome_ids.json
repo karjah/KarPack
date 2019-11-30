@@ -54,7 +54,7 @@
   "pasture": 98,
   "glacier": -1,
   "meadow": 69,
-  "lush_swamp": 65,
+  "lush_swamp": -1,
   "fungi_forest": 109,
   "tropical_island": 105,
   "grassland": 59,

@@ -1,6 +1,7 @@
 import loottweaker.vanilla.loot.LootTables;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
+import crafttweaker.data.IData;
 
 //IceandFire Dungeons
 
@@ -16,7 +17,7 @@ LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cav
 
 //DeepMobLearning
 LootTables.getTable("deepmoblearning:glitch").getPool("deepmoblearning").addItemEntry(<portalgun:item_portalgun>, 1);
-LootTables.getTable("deepmoblearning:glitch").getPool("deepmoblearning").addItemEntry(<minecraft:dirt{display:{Name:"Glitched Dirt",Lore:"I guess the heart Glitched?"}}>, 1);
+LootTables.getTable("deepmoblearning:glitch").getPool("deepmoblearning").addItemEntry(<minecraft:dirt>.withTag({display:(Name:"Glitched Dirt",Lore:"I guess the heart Glitched?")}), 1);
 LootTables.getTable("minecraft:entities/pig").getPool("main").addItemEntry(<minecraft:dirt>, 1);
 LootTables.getTable("minecraft:entities/pig").getPool("main").addItemEntry(<minecraft:dirt>.withTag({display: {Lore: "diswork?"}}), 100);
 LootTables.getTable("minecraft:entities/pig").getPool("main").addItemEntry(<minecraft:dirt>.withTag({display: {Name: "§k§7Glitched Heart", Lore: "diswork?"}}), 100);

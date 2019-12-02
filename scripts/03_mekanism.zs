@@ -1,4 +1,14 @@
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+//Ore output fix
+//copper
+mods.mekanism.smelter.removeRecipe(<mekanism:dust:3>);
+mods.mekanism.smelter.addRecipe(<mekanism:dust:3>, <thermalfoundation:material:128>);
+//tin
+mods.mekanism.smelter.removeRecipe(<mekanism:dust:4>);
+mods.mekanism.smelter.addRecipe(<mekanism:dust:4>, <thermalfoundation:material:129>);
 
 
 //Osmium Replacements

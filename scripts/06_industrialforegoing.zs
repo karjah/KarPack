@@ -2,12 +2,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-val frames as IIngredient[] = [
-	<thermalexpansion:frame>,
-	<rftools:machine_frame>,
-	<mekanism:basicblock:8>
-];
-
 //Plant gatherer
 recipes.remove(<industrialforegoing:crop_recolector>);
 //Plant Interactor
@@ -23,7 +17,7 @@ recipes.remove(<industrialforegoing:material_stonework_factory>);
 //Ore processor
 recipes.remove(<industrialforegoing:ore_processor>);
 
-for frame in frames {
+for frame in machineFrames {
 	recipes.addShaped(<industrialforegoing:crop_recolector>, [[<ore:itemRubber>, <thermalfoundation:tool.hoe_invar>, <ore:itemRubber>],[<thermalfoundation:tool.axe_invar>, frame, <thermalfoundation:tool.axe_invar>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);
 	recipes.addShaped(<industrialforegoing:plant_interactor>, [[<ore:itemRubber>, <thermalfoundation:tool.hoe_invar>, <ore:itemRubber>],[<thermalfoundation:tool.hoe_invar>, frame, <thermalfoundation:tool.hoe_invar>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);
 	recipes.addShaped(<industrialforegoing:mob_relocator>, [[<ore:itemRubber>, <thermalfoundation:tool.sword_invar>, <ore:itemRubber>],[<minecraft:book>, frame, <minecraft:book>], [<ore:gearGold>, <ore:dustRedstone>, <ore:gearGold>]]);

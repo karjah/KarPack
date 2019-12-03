@@ -10,7 +10,6 @@ mods.mekanism.smelter.addRecipe(<mekanism:dust:3>, <thermalfoundation:material:1
 mods.mekanism.smelter.removeRecipe(<mekanism:dust:4>);
 mods.mekanism.smelter.addRecipe(<mekanism:dust:4>, <thermalfoundation:material:129>);
 
-
 //Osmium Replacements
 recipes.replaceAllOccurences(<mekanism:ingot:1>, <minecraft:iron_ingot>);
 

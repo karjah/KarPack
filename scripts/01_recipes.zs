@@ -99,3 +99,4 @@ recipes.addShaped(<rftools:machine_frame>, [[<minecraft:iron_ingot>, <ore:blockG
 recipes.remove(<chickenchunks:chunk_loader:1>);
 recipes.addShapeless(<chickenchunks:chunk_loader:1> * 9, [<chickenchunks:chunk_loader>]);
 recipes.addShaped(<chickenchunks:chunk_loader>, [[<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>],[<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>], [<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>]]);
+

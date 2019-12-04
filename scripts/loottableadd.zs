@@ -6,8 +6,8 @@ import crafttweaker.data.IData;
 //IceandFire Dungeons
 
 //ICE DUNGEONS
-LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").addItemEntry(<minecraft:iron_ingot>, 10);
-LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").addItemEntry(<minecraft:iron_ingot>, 15);
+LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").addItemEntry(<minecraft:iron_ingot * 10>, 10);
+//LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").addItemEntry(<minecraft:iron_ingot>, 15);
 LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").addItemEntry(<portalgun:item_portalgun>, 1);
 LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").addItemEntry(<portalgun:item_portalgun>, 1);
 

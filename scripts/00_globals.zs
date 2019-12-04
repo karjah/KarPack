@@ -11,7 +11,7 @@ global machineFrames as IIngredient[] = [
 ];
 
 
-global metals as IIngredient[string][string] = [
+global metals as IIngredient[string][string] = {
 	copper: {
 		block: <thermalfoundation:storage>,
 		ingot: <thermalfoundation:material:128>,
@@ -92,4 +92,4 @@ global metals as IIngredient[string][string] = [
 		nugget: null,
 		plate: null
 	}
-];
+};

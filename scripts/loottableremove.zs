@@ -38,22 +38,25 @@ fdfCavePool.removeEntry("minecraft:iron_chestplate");
 fdfCavePool.removeEntry("minecraft:iron_leggings");
 fdfCavePool.removeEntry("minecraft:iron_boots");*/
 
-val listTable as string[] = [
 
-	"iceandfire:fire_dragon_female_cave",
-	"iceandfire:fire_dragon_male_cave",
-	"iceandfire:ice_dragon_female_cave",
-	"iceandfire:ice_dragon_male_cave"
-];
 
-val listPool as string[] = [
-
+val dragonTypes as string[] = [
 	"ice_dragon_cave",
 	"fire_dragon_cave"
 ];
 
-val listDelete as string[] = [
+val fire as string[] = [
+	"iceandfire:fire_dragon_male_cave",
+	"iceandfire:fire_dragon_female_cave"
+	
+];
 
+val ice as string[] = [
+	"iceandfire:ice_dragon_male_cave",
+	"iceandfire:ice_dragon_female_cave"
+];
+
+val removeItems as string[] = [
 	"minecraft:iron_sword",
 	"minecraft:iron_helmet",
 	"minecraft:iron_chestplate",
@@ -61,17 +64,25 @@ val listDelete as string[] = [
 	"minecraft:iron_boots"
 ];
 
-for i, tableGrab in listTable {
-	if(tableGrab.contains(listPool[i])) {
-		for j, poolGrab in listPool {
-			if(poolGrab.contains(listDelete[j])) {
-				for entryGrab in listDelete {
-					LootTables.getTable(tableGrab).getPool(poolGrab).removeEntry(entryGrab);
-				}
+for dragon in dragonTypes {
+	for f in fire {
+		val pool = LootTables.getTable(f).getPool(dragon);
+		for item in removeItems {
+			if(pool.contains(item)) {
+				pool.removeEntry(item);
+			}			
+		}
+	}
+	for i in ice {
+		val pool = LootTables.getTable(i).getPool(dragon);
+		for item in removeItems {
+			if(pool.contains(item)) {
+				pool.removeEntry(item);
 			}
 		}
 	}
 }
+
 
 //DIAMOND
 LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:diamond_sword");

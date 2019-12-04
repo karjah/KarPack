@@ -5,11 +5,80 @@ import loottweaker.vanilla.loot.LootPool;
 //IceandFire Dungeons
 
 //ICE DUNGEONS
-LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").removeEntry("iceandfire:silver_ingot");
+//SILVER
+/*LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").removeEntry("iceandfire:silver_ingot");
 LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").removeEntry("iceandfire:silver_nugget");
+//IRON-MALE
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_sword");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_helmet");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_chestplate");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_leggings");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_boots");
 
-//MYRMEX DUNGEONS
-//null
+//DIAMOND
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:diamond_sword");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:diamond_helmet");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:diamond_chestplate");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:diamond_leggings");
+LootTables.getTable("iceandfire:ice_dragon_male_cave").getPool("ice_dragon_cave").removeEntry("minecraft:diamond_boots");
+
+//FIRE DUNGEONS
+//IRON
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:iron_sword");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:iron_helmet");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:iron_chestplate");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:iron_leggings");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:iron_boots");*/
+
+/*val fdfCave = LootTables.getTable("iceandfire:fire_dragon_female_cave");
+val fdfCavePool = fdfCave.getPool("fire_dragon_cave");
+fdfCavePool.removeEntry("minecraft:iron_sword");
+fdfCavePool.removeEntry("minecraft:iron_helmet");
+fdfCavePool.removeEntry("minecraft:iron_chestplate");
+fdfCavePool.removeEntry("minecraft:iron_leggings");
+fdfCavePool.removeEntry("minecraft:iron_boots");*/
+
+val listTable as string[] = [
+
+	"iceandfire:fire_dragon_female_cave",
+	"iceandfire:fire_dragon_male_cave",
+	"iceandfire:ice_dragon_female_cave",
+	"iceandfire:ice_dragon_male_cave"
+];
+
+val listPool as string[] = [
+
+	"ice_dragon_cave",
+	"fire_dragon_cave"
+];
+
+val listDelete as string[] = [
+
+	"minecraft:iron_sword",
+	"minecraft:iron_helmet",
+	"minecraft:iron_chestplate",
+	"minecraft:iron_leggings",
+	"minecraft:iron_boots"
+];
+
+for i, tableGrab in listTable {
+	if(tableGrab.contains(listPool[i])) {
+		for j, poolGrab in listPool {
+			if(poolGrab.contains(listDelete[j])) {
+				for entryGrab in listDelete {
+					LootTables.getTable(tableGrab).getPool(poolGrab).removeEntry(entryGrab);
+				}
+			}
+		}
+	}
+}
+
+//DIAMOND
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:diamond_sword");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:diamond_helmet");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:diamond_chestplate");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:diamond_leggings");
+LootTables.getTable("iceandfire:fire_dragon_male_cave").getPool("fire_dragon_cave").removeEntry("minecraft:diamond_boots");
 
 //Minecraft Dungeons
 

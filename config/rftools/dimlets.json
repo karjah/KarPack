@@ -1,4 +1,148 @@
 [
+  {
+    "filter": {
+      "mod": "immersiveengineering",
+      "name": "ore",
+      "meta": 5,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 50000,
+      "maintain": 20000,
+      "ticks": 1000,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 0,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 1,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 2,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 3,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 4,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 5,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 6,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
+  {
+    "filter": {
+      "mod": "thermalfoundation",
+      "name": "ore",
+      "meta": 8,
+      "type": "material"
+    },
+    "settings": {
+      "rarity": 4,
+      "create": 8000,
+      "maintain": 1400,
+      "ticks": 300,
+      "worldgen": true,
+      "dimlet": true
+    }
+  },
   "Everything below this line will be regenerated from defaults every time. Remove this line if you do not want that",
   {
     "filter": {

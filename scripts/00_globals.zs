@@ -53,43 +53,62 @@ global metals as IIngredient[string][string] = {
 		plate: <thermalfoundation:material:325>
 	},
 	platinum: {
-		block: null,
-		ingot: null,
-		dust: null,
-		gear: null,
-		nugget: null,
-		plate: null
+		block: <thermalfoundation:storage:6>,
+		ingot: <thermalfoundation:material:134>,
+		dust: <thermalfoundation:material:70>,
+		gear: <thermalfoundation:material:262>,
+		nugget: <thermalfoundation:material:198>,
+		plate: <thermalfoundation:material:326>
 	},
 	aluminum: {
-		block: null,
-		ingot: null,
-		dust: null,
-		gear: null,
-		nugget: null,
-		plate: null
+		block: <thermalfoundation:storage:4>,
+		ingot: <thermalfoundation:material:132>,
+		dust: <thermalfoundation:material:68>,
+		gear: <thermalfoundation:material:260>,
+		nugget: <thermalfoundation:material:196>,
+		plate: <thermalfoundation:material:324>
 	},
 	uranium: {
-		block: null,
-		ingot: null,
-		dust: null,
+		block: <immersiveengineering:storage:5>,
+		ingot: <immersiveengineering:metal:5>,
+		dust: <immersiveengineering:metal:14>,
 		gear: null,
-		nugget: null,
+		nugget: <immersiveengineering:metal:25>,
 		plate: null
 	},
 	cobalt: {
-		block: null,
-		ingot: null,
+		block: <tconstruct:metal>,
+		ingot: <tconstruct:ingots>,
 		dust: null,
 		gear: null,
-		nugget: null,
+		nugget: <tconstruct:nuggets>,
 		plate: null
 	},
 	ardite: {
-		block: null,
-		ingot: null,
+		block: <tconstruct:metal:1>,
+		ingot: <tconstruct:ingots:1>,
 		dust: null,
 		gear: null,
-		nugget: null,
+		nugget: <tconstruct:nuggets:1>,
 		plate: null
+	}
+};
+
+global alloys as IIngredient[string][string] = {
+	steel: {
+		block: <thermalfoundation:storage_alloy>,
+		ingot: <thermalfoundation:material:160>,
+		dust: null,
+		gear: <thermalfoundation:material:288>,
+		nugget: <thermalfoundation:material:224>,
+		plate: <thermalfoundation:material:352>
+	},
+	signalum: {
+		block: <thermalfoundation:storage_alloy:5>,
+		ingot: <thermalfoundation:material:165>,
+		dust: null,
+		gear: <thermalfoundation:material:293>,
+		nugget: <thermalfoundation:material:229>,
+		plate: <thermalfoundation:material:357>
 	}
 };

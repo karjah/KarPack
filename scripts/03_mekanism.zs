@@ -9,10 +9,15 @@ mods.mekanism.smelter.addRecipe(<mekanism:dust:3>, <thermalfoundation:material:1
 //tin
 mods.mekanism.smelter.removeRecipe(<mekanism:dust:4>);
 mods.mekanism.smelter.addRecipe(<mekanism:dust:4>, <thermalfoundation:material:129>);
+//steel
+mods.mekanism.smelter.removeRecipe(<mekanism:otherdust:1>);
+mods.mekanism.smelter.addRecipe(<mekanism:otherdust:1>, <thermalfoundation:material:160>);
 
 //Osmium Replacements
 recipes.replaceAllOccurences(<mekanism:ingot:1>, <minecraft:iron_ingot>);
 recipes.replaceAllOccurences(<mekanism:dust:2>, <thermalfoundation:material>);
+
+recipes.replaceAllOccurences(<mekanism:ingot:4>, <thermalfoundation:material:160>);
 
 recipes.remove(<mekanism:electrolyticcore>);
 recipes.addShaped(<mekanism:electrolyticcore>, [[<mekanism:enrichedalloy>, <ore:dustCopper>, <mekanism:enrichedalloy>],[<ore:dustIron>, <mekanism:enrichedalloy>, <ore:dustGold>], [<mekanism:enrichedalloy>, <ore:dustCopper>, <mekanism:enrichedalloy>]]);

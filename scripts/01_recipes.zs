@@ -43,8 +43,6 @@ var recipeRemove as IIngredient[] = [
 	<immersiveengineering:ore:4>,
 	<immersiveengineering:ore:0>,
 	<mekanism:oreblock:1>,
-	<drawbridges:ore_copper>,
-	<drawbridges:ore_tin>,
 	<mekanism:oreblock>,
 	<mekanism:oreblock:2>,
 	<bigreactors:oreyellorite>,
@@ -53,19 +51,11 @@ var recipeRemove as IIngredient[] = [
 	<draconicevolution:draconium_ore:1>,
 
 	//Unused Ingots(duplicates, etc)
-	<drawbridges:ingot>,
-	<drawbridges:ingot:1>,
 	<mekanism:ingot:1>,
 
 	//WIP items
-	<drawbridges:drawbridge_advanced>,
 
 	//Crap
-	<drawbridges:plate>,
-	<drawbridges:plate:1>,
-	<drawbridges:plate:2>,
-	<drawbridges:plate:3>,
-	<drawbridges:plate:4>,
 
 ];
 
@@ -79,15 +69,6 @@ for item in recipeRemove {
 //Vanilla
 
 recipes.addShaped(<minecraft:chest> * 4, [[<ore:logWood>, <ore:logWood>, <ore:logWood>],[<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
-
-//Drawbridges
-
-//add drawbridge recipe
-recipes.remove(<drawbridges:drawbridge>);
-recipes.addShaped(<drawbridges:drawbridge>, [[<thermalfoundation:material:355>, <minecraft:chest>, <thermalfoundation:material:355>],[<minecraft:piston>, <minecraft:dispenser>, <minecraft:piston>], [<thermalfoundation:material:355>, <deepmoblearning:soot_covered_redstone>, <thermalfoundation:material:355>]]);
-//add extended drawbridge
-recipes.remove(<drawbridges:drawbridge_extended>);
-recipes.addShaped(<drawbridges:drawbridge_extended>, [[<thermalfoundation:material:33>, <minecraft:diamond>, <thermalfoundation:material:33>],[<minecraft:diamond>, <drawbridges:drawbridge>, <minecraft:diamond>], [<thermalfoundation:material:33>, <deepmoblearning:soot_covered_redstone>, <thermalfoundation:material:33>]]);
 
 //RFTools
 

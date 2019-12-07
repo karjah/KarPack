@@ -57,7 +57,6 @@ var recipeRemove as IIngredient[] = [
 
 	//Crap
 
-
 ];
 
 for item in recipeRemove {
@@ -74,7 +73,6 @@ furnace.remove(<variedcommodities:ingot_steel>);
 //Vanilla
 
 recipes.addShaped(<minecraft:chest> * 4, [[<ore:logWood>, <ore:logWood>, <ore:logWood>],[<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
-
 
 //RFTools
 

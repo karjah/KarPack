@@ -66,6 +66,10 @@ for item in recipeRemove {
 
 //MODS
 
+//Random  Broken recipes
+furnace.remove(<thermalfoundation:material:160>);
+furnace.remove(<variedcommodities:ingot_steel>);
+
 //Vanilla
 
 recipes.addShaped(<minecraft:chest> * 4, [[<ore:logWood>, <ore:logWood>, <ore:logWood>],[<ore:logWood>, null, <ore:logWood>], [<ore:logWood>, <ore:logWood>, <ore:logWood>]]);
@@ -80,3 +84,4 @@ recipes.addShaped(<rftools:machine_frame>, [[<minecraft:iron_ingot>, <ore:blockG
 recipes.remove(<chickenchunks:chunk_loader:1>);
 recipes.addShapeless(<chickenchunks:chunk_loader:1> * 9, [<chickenchunks:chunk_loader>]);
 recipes.addShaped(<chickenchunks:chunk_loader>, [[<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>],[<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>], [<chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>, <chickenchunks:chunk_loader:1>]]);
+

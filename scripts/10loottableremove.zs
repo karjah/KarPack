@@ -42,13 +42,13 @@ val removeItemsDiamond as string[] = [
 	"minecraft:diamond_boots"
 ];
 
-
-
+/* This is broken
 for fireTable in fire {
 	for itemGrab in removeItemsIron {
 		LootTables.getTable(fireTable).getPool(dType["fdc"]).removeEntry(itemGrab);
 	}
 }
+*/
 
 for itemGrab in removeItemsIron {
 	LootTables.getTable(lootTables["imTable"]).getPool(dType["idc"]).removeEntry(itemGrab);
@@ -67,7 +67,7 @@ for itemGrab in removeItemsDiamond {
 }
 
 
-
+LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_ingot");
 
 /*for dragon in dragonTypes {
 	for f in fire {

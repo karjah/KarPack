@@ -2,8 +2,6 @@ import loottweaker.vanilla.loot.LootTables;
 import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
-//IceandFire Dungeons
-
 global lootTables as string[string] = {
 	fmTable: "iceandfire:fire_dragon_male_cave",
 	ffTable: "iceandfire:fire_dragon_female_cave",
@@ -42,13 +40,17 @@ val removeItemsDiamond as string[] = [
 	"minecraft:diamond_boots"
 ];
 
-/* This is broken
-for fireTable in fire {
-	for itemGrab in removeItemsIron {
-		LootTables.getTable(fireTable).getPool(dType["fdc"]).removeEntry(itemGrab);
-	}
+for itemGrab in removeItemsIron {
+	LootTables.getTable(lootTables["fmTable"]).getPool(dType["fdc"]).removeEntry(itemGrab);
 }
-*/
+
+for itemGrab in removeItemsIron {
+	LootTables.getTable(lootTables["ffTable"]).getPool(dType["fdc"]).removeEntry(itemGrab);
+}
+
+for itemGrab in removeItemsDiamond {
+	LootTables.getTable(lootTables["fmTable"]).getPool(dType["fdc"]).removeEntry(itemGrab);
+}
 
 for itemGrab in removeItemsIron {
 	LootTables.getTable(lootTables["imTable"]).getPool(dType["idc"]).removeEntry(itemGrab);
@@ -59,34 +61,8 @@ for itemGrab in removeItemsSilver {
 }
 
 for itemGrab in removeItemsDiamond {
-	LootTables.getTable(lootTables["fmTable"]).getPool(dType["fdc"]).removeEntry(itemGrab);
-}
-
-for itemGrab in removeItemsDiamond {
 	LootTables.getTable(lootTables["imTable"]).getPool(dType["idc"]).removeEntry(itemGrab);
 }
-
-
-LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_ingot");
-
-/*for dragon in dragonTypes {
-	for f in fire {
-		val pool = LootTables.getTable(f).getPool(dragon);
-		for item in removeItems {
-			if(pool.contains(item)) {
-				pool.removeEntry(item);
-			}			
-		}
-	}
-	for i in ice {
-		val pool = LootTables.getTable(i).getPool(dragon);
-		for item in removeItems {
-			if(pool.contains(item)) {
-				pool.removeEntry(item);
-			}
-		}
-	}
-}*/
 
 //Minecraft Dungeons
 

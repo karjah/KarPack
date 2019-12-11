@@ -9,7 +9,7 @@ import crafttweaker.player.IPlayer;
 
 
 //other vars
-static PACK_VERSION as string = "5.2.4";
+static PACK_VERSION as string = "5.3.0";
 static PACK_URL as string = "https://github.com/karjah/KarPack/issues";
 
 /* Fixes broken bread recipe */

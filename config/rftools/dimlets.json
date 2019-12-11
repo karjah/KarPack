@@ -9,7 +9,7 @@
     "settings": {
       "rarity": 4,
       "create": 50000,
-      "maintain": 20000,
+      "maintain": 2000,
       "ticks": 1000,
       "worldgen": true,
       "dimlet": true

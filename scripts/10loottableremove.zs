@@ -64,6 +64,9 @@ for itemGrab in removeItemsDiamond {
 	LootTables.getTable(lootTables["imTable"]).getPool(dType["idc"]).removeEntry(itemGrab);
 }
 
+//Why is this error keep coming back?
+LootTables.getTable("iceandfire:ice_dragon_female_cave").getPool("ice_dragon_cave").removeEntry("minecraft:iron_ingot");
+
 //Minecraft Dungeons
 
 //ABANDONED MINESHAFT
